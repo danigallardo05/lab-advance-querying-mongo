@@ -89,11 +89,11 @@ limit: 10
 ### 11. All the companies founded on the second semester of the year. Limit your search to 1000 companies.
 
 <!-- Your Code Goes Here -->
-query: 
-projection: 
-sort: 
-skip: 
-limit: 
+query: {founded_month: { $gt: 06 } }
+projection: none
+sort: none
+skip: none
+limit: 1000
 
 ### 12. All the companies founded before 2000 that have an acquisition amount of more than 10.000.000
 
